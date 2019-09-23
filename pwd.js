@@ -1,10 +1,5 @@
-const pwdFunc = function(data) {
-    const cmd = data.toString().trim();
-    if (cmd === 'pwd') {
-        process.stdout.write(__dirname);
-    } else {
-        process.stdout.write('You typed: ' + cmd);
-    }
+const pwdFunc = function() {
+    process.stdout.write(__dirname);
     process.stdout.write('\nprompt > ')
 }
 
